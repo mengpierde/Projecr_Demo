@@ -1,0 +1,90 @@
+{
+  "name": "template",
+  "version": "1.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build && node ./build/index.js",
+    "lint": "vue-cli-service lint",
+    "lint-fix": "vue-cli-service lint --fix",
+    "mock": "set NODE_ENV_MOCK=mock && vue-cli-service serve",
+    "zip": "node ./build/index.js",
+    "test:unit": "vue-cli-service test:unit",
+    "server-app": "node tests/server/server-app.js",
+    "server-nginx-dist": "node tests/server/server-nginx-dist.js"
+  },
+  "dependencies": {
+    "@tweenjs/tween.js": "^18.5.0",
+    "axios": "^0.19.0",
+    "crypto-js": "^3.1.9-1",
+    "echarts": "^4.5.0",
+    "element-ui": "^2.13.0",
+    "jquery": "^3.4.1",
+    "lodash": "^4.17.15",
+    "mint-ui": "^2.2.13",
+    "moment": "^2.24.0",
+    "ol": "^6.3.1",
+    "vue": "^2.6.10",
+    "vue-qr": "^2.2.1",
+    "vue-router": "^3.1.3",
+    "vuex": "^3.1.2",
+    "weui": "^2.1.3",
+    "weui.js": "^1.2.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-transform-runtime": "^7.7.6",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/runtime-corejs3": "^7.7.6",
+    "@vue/cli-plugin-babel": "^4.1.0",
+    "@vue/cli-plugin-eslint": "^4.1.0",
+    "@vue/cli-plugin-unit-mocha": "^4.1.1",
+    "@vue/cli-service": "^4.1.0",
+    "@vue/eslint-config-standard": "^5.0.1",
+    "@vue/test-utils": "^1.0.0-beta.30",
+    "archiver": "^3.1.1",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-plugin-transform-es2015-typeof-symbol": "^6.23.0",
+    "babel-plugin-transform-vue-jsx": "^3.7.0",
+    "chai": "^4.2.0",
+    "core-js": "^3.4.3",
+    "element-theme": "^2.0.1",
+    "element-theme-chalk": "^2.13.0",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "^5.0.0",
+    "lint-fix": "^0.24.0",
+    "mock": "^0.1.1",
+    "node-sass": "^4.13.0",
+    "parcel-bundler": "^1.12.4",
+    "sass-loader": "^8.0.0",
+    "shelljs": "^0.8.3",
+    "uri-js": "^4.2.2",
+    "vconsole": "^3.3.4",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}

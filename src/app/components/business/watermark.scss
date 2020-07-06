@@ -1,0 +1,55 @@
+//父容器设置 position: absolute;
+.water-mark {
+  width: calc(100% - 62px);
+  height: calc(100% - 120px);
+  //height:  100%;
+  overflow: hidden;
+  opacity: 0.3;
+  z-index: 10000;
+  display: block;
+  background: none;
+  position: absolute;
+  margin: 15px;
+  pointer-events: none;
+  text-align: center;
+
+  /*文字不可选*/
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  pointer-events: none;
+
+  min-height: 100px;
+}
+
+.water-mark i {
+  transform: translateY(-45px) rotate(-35deg);
+  font-family: "微软雅黑";
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  padding: 140px 0px; /* 解决文本过长显示只有一列*/
+  margin: 0 -4px; /* 解决文本过长显示只有一列*/
+  z-index: 10;
+  cursor: default;
+  position: relative;
+  font-size: 18px;
+  /*color: rgb(0, 0, 0, 0);*/
+  /*	box-shadow: 1px 1px 2px rgba(19,44,123,0.3);*/
+  /*-webkit-text-stroke: 2px rgba(0,0,0,0.3);*/
+  /*-webkit-text-fill-color: rgb(58, 58, 0,0);*/
+  color: rgba(176, 190, 202, 0.7);
+  /*text-shadow:0px 2px 2px rgba(9,10,93,0.5);*/
+  /*box-shadow: 2px 0px 5px rgba(0,0,0,0.2);*/
+}
+
+.water-mark i:nth-child(2n) {
+  transform: translateY(-120px) rotate(-35deg);
+}
+
+.water-mark i.hover {
+  pointer-events: none;
+  opacity: 0;
+}

@@ -1,0 +1,137 @@
+@charset "UTF-8";
+/* CSS Document */
+html, body {
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 110px;
+    background: url("../../images/newHome/head_bg_left.png") no-repeat 2px 9px;
+}
+
+.logo {
+    width: 259px;
+    height: 57px;
+    margin: 20px;
+    background: url("../../images/newHome/logo.png") no-repeat;
+    float: left;
+}
+
+.nav {
+    /* margin: 40px 0 15px 313px;
+    float: left;
+    position: absolute; */
+    margin: 38px 0 15px 40px;
+    float: left;
+}
+
+.nav .nav_name {
+    margin-left: 13px;
+    float: left;
+    width: 156px;
+    height: 46px;
+    cursor: pointer;
+    background: url("../../images/newHome/menu_bg.png") no-repeat 12px 0;
+    overflow: hidden;
+}
+.nav .nav_name.active {
+    background: url("../../images/newHome/menu_bg_ho.png") no-repeat 12px 0;
+}
+
+.nav .nav_name .nav_round {
+    margin-top: 20px;
+    width: 26px;
+    height: 26px;
+    position: relative;
+    float: left;
+}
+
+.nav .nav_name .nav_img_c2 {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    z-index: 0;
+    animation: nav_img_c2 2.5s infinite linear;
+}
+
+@keyframes nav_img_c2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.nav .nav_name .nav_img_c1 {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    right: 5px;
+    background: url("../../images/newHome/cl1.png");
+}
+
+.nav .nav_name > p {
+    width: 143px;
+    height: 41px;
+    text-align: center;
+    line-height: 41px;
+    font-size: 16px;
+    color: #00fffc;
+}
+.header_login {
+    float: right;
+    width: 464px;
+    position: relative;
+    /*width: 217px;*/
+    /*height: 85px;*/
+    /*background: url("../../images/newHome/head_bg_right.png") 0 60px no-repeat;*/
+}
+.header_login .login_welcome {
+    float: left;
+    margin-top: 65px;
+    color: #fff;
+}
+.header_login .login_welcome span:last-child {
+    color: #00fffc;
+}
+.header_login .login_user{
+    float: left;
+    margin-top: 9px;
+    margin-left: 24px;
+}
+.header_login .login_user span{
+    color: #00fffc;
+}
+.login_user_info img{
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+
+}
+.login_user_info > p{
+    display: inline-block;
+    margin-top: 18px;
+    vertical-align: top;
+}
+.login_user_info > p > span {
+    padding: 8px;
+    font-weight: bold;
+}
+.login_user_info > p > span:first-child {
+    color: #de9a47;
+}
+.login_user_info > p > span:last-child {
+    /*background: url("../../images/newHome/");*/
+}
+.login_bg {
+    width: 217px;
+    height: 85px;
+    position: absolute;
+    top: 64px;
+    right: 8px;
+    background: url("../../images/newHome/head_bg_right.png");
+}

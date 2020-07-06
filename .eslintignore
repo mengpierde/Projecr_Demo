@@ -1,0 +1,19 @@
+/build/
+/config/
+/dist/
+/*.js
+test/
+temp/
+mock/
+node_modules/
+npm-debug.log*
+/test/
+/src/**/ObjectUtil.js
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln

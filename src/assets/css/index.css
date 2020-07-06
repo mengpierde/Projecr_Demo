@@ -1,0 +1,13 @@
+/*导入公共样式*/
+@import url('common/normalize.css');
+@import url('common/common.css');
+@import url('common/header.css');
+/*对tree样式处理*/
+@import url('common/tydic_ga_ui.css');
+/*背景动画*/
+@import url('common/statewall.css');
+/*主要内容*/
+@import url('common/main.css');
+/*左侧导航*/
+@import url('common/leftMenu.css');
+
